@@ -22,24 +22,31 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+body {
+  background-color: var(--Stone-100);
+  color: var(--Stone-600);
+  font-family: "Outfit", sans-serif;
+}
+
 .container {
   min-height: 100vh;
-  min-width: 100vw;
+  max-width: 40vw;
+  margin-inline: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--Stone-100);
-  font-family: "Outfit", sans-serif;
+  padding: 5%;
 }
 
 .card {
   background-color: var(--White);
   border-radius: 20px;
-  padding: 50px;
+  padding: 5%;
 }
 
 .card-image {
   border-radius: 10px;
+  max-width: 100%;
 }
 
 h1 {
@@ -48,6 +55,49 @@ h1 {
   font-weight:normal;
 }
 
-p {
+h2 {
+  font-family: "Young Serif", serif;
+  color: var(--Brown-800);
+  font-weight: normal;
+}
+
+.pink-canvas {
+  background-color: var(--Rose-50);
+  padding: 4%;
+  border-radius: 20px;
+}
+
+.pink-title {
+  color: var(--Rose-800);
+  font-weight: bold;
+}
+
+.pink-list {
+  padding-inline-start: 15px;
+}
+
+.pink-list li {
+  margin: 10px;
+  list-style-type: disc;
+  color: var(--Rose-800);
+  padding-left: 4%;
+}
+
+.pink-list li span {
+  color: var(--Stone-600);
+}
+
+.ingredients {
+  padding-inline-start: 30px;
+}
+
+.ingredients li {
+  margin: 10px;
+  list-style-type: disc;
+  color: var(--Brown-800);
+  padding-left: 4%;
+}
+
+.ingredients li span {
   color: var(--Stone-600);
 }
